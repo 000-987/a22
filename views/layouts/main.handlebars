@@ -1,0 +1,49 @@
+<!-- ./views/layouts/main.handlebars -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheet/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <label class="navbar-toggle" for="navbar-toggle">
+      </label>
+      <a class="navbar-brand" href="/">
+        <p class="navbar-brand-text">回到首頁</p>
+      </a>
+  
+      <div class="nav-lists">
+        <ul class="nav-list">
+          <a href="/About">
+            <li>
+              About
+            </li>
+          </a>
+          <a href="/Portfolio">
+            <li>
+              Portfolio
+            </li>
+          </a>
+          <a href="/Contact">
+            <li>
+              Contact
+            </li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- partial templates will replace the part of "body" here -->
+  {{{ body }}}
+</body>
+
+</html>
